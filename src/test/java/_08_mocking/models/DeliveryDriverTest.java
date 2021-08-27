@@ -44,13 +44,13 @@ class DeliveryDriverTest {
     @Test
     void itShouldRefuel() {
         //given
-    	double test = car.getFuelLevel();
+    	boolean test = true;
         //when
-    	deliveryDriver.refuel(2);
+    	boolean e= deliveryDriver.refuel(2);
     	double x = car.getFuelLevel()-2.0;
     	
         //then
-    	assertEquals(x,test,0.01);
+    	assertEquals(e,test);
     }
 
     @Test
